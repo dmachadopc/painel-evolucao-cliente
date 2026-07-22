@@ -223,9 +223,9 @@ export const comparisons: Comparison[] = [
   },
   {
     id: 'responsividade-mobile-4',
-    title: 'Mobile: Formulários e Filtros',
-    description: 'Campos de entrada e menus de seleção redimensionados para largura cheia para evitar zoom forçado na hora do preenchimento.',
-    result: 'Preenchimento rápido e sem barreiras de acessibilidade.',
+    title: 'Mobile: Formulários, Filtros & Tema Escuro',
+    description: 'Campos de entrada e menus de seleção redimensionados para largura cheia (evitando zoom forçado) integrados com contraste semântico otimizado para o Tema Escuro (Dark Mode) no celular.',
+    result: 'Navegação confortável aos olhos em qualquer iluminação e preenchimento ágil sem barreiras de acessibilidade.',
     beforeLabel: 'Formulários desconfigurados',
     afterLabel: 'Filtros e Inputs Alinhados',
     afterImageUrl: '/assets/mobile-atual-4.jpg'
