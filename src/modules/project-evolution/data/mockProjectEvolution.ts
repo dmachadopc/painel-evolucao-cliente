@@ -214,11 +214,11 @@ export const comparisons: Comparison[] = [
   },
   {
     id: 'responsividade-mobile-3',
-    title: 'Mobile: Listagens e Ações Rápidas',
-    description: 'Tabelas densas foram transformadas em cards independentes com botões de ação contextuais visíveis e de fácil clique.',
-    result: 'Operação do ERP no celular com a mesma agilidade do computador.',
-    beforeLabel: 'Tabelas largas inacessíveis',
-    afterLabel: 'Cards Mobile com Ações Diretas',
+    title: 'Mobile: Adaptação da Sidebar (Menu)',
+    description: 'Transformação da barra lateral de navegação em um menu gaveta (Mobile Drawer) retrátil, otimizado para o toque e visualização limpa em telas verticais.',
+    result: 'Navegação fluida e acesso simplificado a todos os módulos do ERP pelo celular.',
+    beforeLabel: 'Barra lateral comprimida',
+    afterLabel: 'Menu Mobile Drawer',
     afterImageUrl: '/assets/mobile-atual-3.jpg'
   },
   {
