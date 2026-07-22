@@ -39,6 +39,8 @@ export interface Comparison {
   afterLabel?: string;
   beforeImageUrl?: string;
   afterImageUrl?: string;
+  beforeVideoUrl?: string;
+  afterVideoUrl?: string;
 }
 
 export type RoadmapPriority = 'high' | 'medium' | 'low';

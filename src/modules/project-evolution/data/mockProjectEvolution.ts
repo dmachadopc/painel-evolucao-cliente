@@ -157,12 +157,24 @@ export const releases: Release[] = [
 
 export const comparisons: Comparison[] = [
   {
+    id: 'ravem-gravacao-tela',
+    title: 'Fluxo Operacional e Usabilidade do Sistema',
+    description: 'Comparação em vídeo demonstrando a evolução da navegação, fluidez de carregamento e facilidade de uso do novo Ravem ERP em relação à versão antiga.',
+    result: 'Redução drástica no tempo de execução de tarefas rotineiras e interface moderna.',
+    beforeLabel: 'Sistema Antigo',
+    afterLabel: 'Sistema Atual',
+    beforeVideoUrl: '/videos/sistema-antigo.webm',
+    afterVideoUrl: '/videos/sistema-atual.webm'
+  },
+  {
     id: 'home-centro-comando',
     title: 'Página Inicial → Centro de Comando',
     description: 'A Home saiu de uma grade estática de indicadores independentes para um painel que prioriza a leitura em menos de cinco segundos, com ação recomendada e fila operacional viva.',
     result: 'Decisões diárias mais rápidas, com contexto e hierarquia visual clara.',
     beforeLabel: 'Home v1 (grade de indicadores)',
-    afterLabel: 'Centro de Comando Operacional'
+    afterLabel: 'Centro de Comando Operacional',
+    beforeImageUrl: '/assets/pagina-inicial-antiga.png',
+    afterImageUrl: '/assets/pagina-inicial-atual.png'
   },
   {
     id: 'gestao-acessos',
@@ -170,7 +182,8 @@ export const comparisons: Comparison[] = [
     description: 'O controle manual de quem tinha acesso a quais sistemas foi substituído por um painel de gestão de contas, convites, colaboradores e auditoria dentro do próprio ERP.',
     result: 'Zero dependência de planilhas para conceder ou revogar acessos.',
     beforeLabel: 'Controle manual (planilha)',
-    afterLabel: 'Painel de Gestão de Acessos'
+    afterLabel: 'Painel de Gestão de Acessos',
+    afterImageUrl: '/assets/gestao-acessos-atual.png'
   },
   {
     id: 'financeiro-clickup',
@@ -179,6 +192,43 @@ export const comparisons: Comparison[] = [
     result: 'Dados financeiros seguros, auditáveis e centralizados no ERP.',
     beforeLabel: 'ClickUp (quadro genérico)',
     afterLabel: 'Painel Financeiro Ravem'
+  },
+  {
+    id: 'responsividade-mobile-1',
+    title: 'Mobile: Menu & Sidebar Adaptada',
+    description: 'Navegação redesenhada para smartphones. Menu lateral retrátil e cabeçalho otimizado evitam que a interface fique espremida.',
+    result: 'Acesso rápido a todos os módulos com facilidade de toque.',
+    beforeLabel: 'Versão Mobile Antiga',
+    afterLabel: 'Novo Menu Responsivo',
+    beforeImageUrl: '/assets/mobile-antiga.png',
+    afterImageUrl: '/assets/mobile-atual-1.jpeg'
+  },
+  {
+    id: 'responsividade-mobile-2',
+    title: 'Mobile: Dashboard & Indicadores',
+    description: 'Os blocos de estatísticas e gráficos passam de colunas horizontais fixas para pilhas verticais flexíveis e redimensionadas.',
+    result: 'Visualização completa de dados operacionais sem necessidade de zoom lateral.',
+    beforeLabel: 'Visualização Desktop no Celular',
+    afterLabel: 'Blocos de Informação Otimizados',
+    afterImageUrl: '/assets/mobile-atual-2.jpg'
+  },
+  {
+    id: 'responsividade-mobile-3',
+    title: 'Mobile: Listagens e Ações Rápidas',
+    description: 'Tabelas densas foram transformadas em cards independentes com botões de ação contextuais visíveis e de fácil clique.',
+    result: 'Operação do ERP no celular com a mesma agilidade do computador.',
+    beforeLabel: 'Tabelas largas inacessíveis',
+    afterLabel: 'Cards Mobile com Ações Diretas',
+    afterImageUrl: '/assets/mobile-atual-3.jpg'
+  },
+  {
+    id: 'responsividade-mobile-4',
+    title: 'Mobile: Formulários e Filtros',
+    description: 'Campos de entrada e menus de seleção redimensionados para largura cheia para evitar zoom forçado na hora do preenchimento.',
+    result: 'Preenchimento rápido e sem barreiras de acessibilidade.',
+    beforeLabel: 'Formulários desconfigurados',
+    afterLabel: 'Filtros e Inputs Alinhados',
+    afterImageUrl: '/assets/mobile-atual-4.jpg'
   }
 ];
 
@@ -288,31 +338,71 @@ export const documents: DocumentRef[] = [
     id: 'diagnostico',
     title: 'Diagnóstico Técnico',
     description: 'Levantamento inicial de processos, dores e oportunidades identificadas para o ERP.',
-    status: 'coming_soon'
+    status: 'available',
+    href: '/docs/diagnostico.md'
   },
   {
     id: 'roadmap',
     title: 'Roadmap',
     description: 'Planejamento de fases e entregas funcionais do produto (ROADMAP.md).',
-    status: 'coming_soon'
+    status: 'available',
+    href: '/docs/roadmap.md'
   },
   {
     id: 'plano-tecnico',
     title: 'Plano Técnico',
     description: 'Especificações técnicas detalhadas das reorganizações e módulos do sistema.',
-    status: 'coming_soon'
+    status: 'available',
+    href: '/docs/plano-tecnico.md'
   },
   {
     id: 'arquitetura',
     title: 'Arquitetura',
     description: 'Visão geral da arquitetura modular do frontend e do backend Supabase.',
-    status: 'coming_soon'
+    status: 'available',
+    href: '/docs/arquitetura.md'
   },
   {
     id: 'decisoes-tecnicas',
     title: 'Decisões Técnicas',
     description: 'Registro histórico das decisões de engenharia tomadas ao longo do projeto (DECISOES_TECNICAS.md).',
-    status: 'coming_soon'
+    status: 'available',
+    href: '/docs/decisoes-tecnicas.md'
+  },
+  {
+    id: 'design-system',
+    title: 'Design System',
+    description: 'Manual de identidade visual, tipografia, paleta de cores e guia de componentes do ERP.',
+    status: 'available',
+    href: '/docs/design-system.md'
+  },
+  {
+    id: 'gestao-acessos-doc',
+    title: 'Gestão de Acessos',
+    description: 'Mapeamento de papéis, permissões de usuários e fluxos operacionais de acesso no painel.',
+    status: 'available',
+    href: '/docs/gestao-acessos.md'
+  },
+  {
+    id: 'auditoria-ux-ui',
+    title: 'Auditoria de UX/UI',
+    description: 'Levantamento completo de melhorias de interface, ergonomia visual e experiência de uso no ERP.',
+    status: 'available',
+    href: '/docs/auditoria-ux-ui.md'
+  },
+  {
+    id: 'arquitetura-responsiva',
+    title: 'Arquitetura Responsiva',
+    description: 'Planejamento e especificações técnicas de breakpoints, menus e layouts mobile (UX-002).',
+    status: 'available',
+    href: '/docs/arquitetura-responsiva.md'
+  },
+  {
+    id: 'padrao-visual-premium',
+    title: 'Padrão Visual Premium',
+    description: 'Especificações de refinamento estético, microinterações e padrão visual do ERP (UX-004).',
+    status: 'available',
+    href: '/docs/padrao-visual-premium.md'
   },
   {
     id: 'contrato',

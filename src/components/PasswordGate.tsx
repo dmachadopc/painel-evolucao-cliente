@@ -46,7 +46,7 @@ export const PasswordGate: React.FC<PasswordGateProps> = ({ children }) => {
           <img
             src="/assets/logos/ravem-erp-logo.webp"
             alt="Ravem ERP Logo"
-            className="mb-2 h-10 object-contain"
+            className="mb-4 h-36 w-auto max-w-full object-contain"
           />
           <CardTitle className="text-base">Acesso restrito</CardTitle>
           <CardDescription>
