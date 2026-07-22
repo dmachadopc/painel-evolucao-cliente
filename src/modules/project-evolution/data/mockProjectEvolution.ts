@@ -196,10 +196,10 @@ export const comparisons: Comparison[] = [
   {
     id: 'responsividade-mobile-1',
     title: 'Mobile: Menu & Sidebar Adaptada',
-    description: 'Navegação redesenhada para smartphones. Menu lateral retrátil e cabeçalho otimizado evitam que a interface fique espremida.',
-    result: 'Acesso rápido a todos os módulos com facilidade de toque.',
-    beforeLabel: 'Versão Mobile Antiga',
-    afterLabel: 'Novo Menu Responsivo',
+    description: 'Na versão antiga, a navegação em celulares era inviável devido à total falta de responsividade, fazendo com que os menus e conteúdos se sobrepusessem. Na versão atual, a interface foi completamente redesenhada para dispositivos móveis.',
+    result: 'Interface fluida e organizada, livre de elementos sobrepostos e adaptada para toque.',
+    beforeLabel: 'Versão Mobile Antiga (Inacessível)',
+    afterLabel: 'Novo Layout Otimizado',
     beforeImageUrl: '/assets/mobile-antiga.png',
     afterImageUrl: '/assets/mobile-atual-1.jpeg'
   },
