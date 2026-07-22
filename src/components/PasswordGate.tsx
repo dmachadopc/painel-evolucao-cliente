@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Lock, ShieldAlert } from 'lucide-react';
+import { ShieldAlert } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from './ui/card';
 import { Button } from './ui/button';
 import { ACCESS_PASSWORD, ACCESS_SESSION_KEY } from '../config/access';
@@ -43,9 +43,11 @@ export const PasswordGate: React.FC<PasswordGateProps> = ({ children }) => {
     <div className="flex min-h-screen w-full items-center justify-center bg-background p-4 font-sans">
       <Card className="login-enter w-full max-w-sm shadow-soft-md">
         <CardHeader className="items-center text-center">
-          <div className="mb-2 flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary">
-            <Lock className="h-5 w-5" strokeWidth={1.75} />
-          </div>
+          <img
+            src="/assets/logos/ravem-erp-logo.webp"
+            alt="Ravem ERP Logo"
+            className="mb-2 h-10 object-contain"
+          />
           <CardTitle className="text-base">Acesso restrito</CardTitle>
           <CardDescription>
             Digite a senha de acesso para visualizar a Evolução do Projeto do Ravem ERP.
